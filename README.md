@@ -1,1 +1,5 @@
 # MongoDB-Cassandra-Neo4j (Advanced DataBase)
+Two projects of NoSQL. One is based on MongoDB(Document-oriented databases) and Cassandra(Column-oriented databases). Another is based on Neo4j(graph database).NoSQL database follows BASE strategy unlike SQL's ACID. NoSQL database emphasises more on effectiveness. They focus on unstructured and big data.
+## MongoDB & Cassandra project: It is based on a resindential service where hosts can create listing. Each listing has many attributes. Guests can review the listings. Queries are used to create database model and to find some specific data from the dataset.
+## Neo4j project: It is based on a resindential service where hosts can create listing. Each listing has many attributes. Guests can review the listings. Queries are used to create database model and to find some specific data from the dataset. There are visualizations in the solution pdf.
+## Environments: Mongo DB Community Server 4.0.11, Cassandra 3.11.4, Neo4j Desktop 1.2.1 and Python 2.7.0 for Cassandra.
