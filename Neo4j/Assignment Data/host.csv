@@ -1,0 +1,84 @@
+﻿host_id,host_url,host_name,host_verifications,host_since,host_location,host_response_time,host_is_superhost
+33057,https://www.airbnb.com/users/show/33057,Manju,"['email', 'phone', 'reviews']",2009-08-21,"Albert Park, Victoria, Australia",N/A,f
+38901,https://www.airbnb.com/users/show/38901,Lindsay,"['email', 'phone', 'reviews', 'jumio', 'government_id']",2009-09-16,"Melbourne, Victoria, Australia",within an hour,t
+50121,https://www.airbnb.com/users/show/50121,The A2C Team,"['email', 'phone', 'google', 'reviews', 'jumio', 'government_id', 'work_email']",2009-10-31,"Melbourne, Victoria, Australia",within an hour,f
+59786,https://www.airbnb.com/users/show/59786,Eleni,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'offline_government_id', 'government_id', 'work_email']",2009-12-03,"Melbourne, Victoria, Australia",N/A,f
+65090,https://www.airbnb.com/users/show/65090,Colin,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'offline_government_id', 'government_id']",2009-12-22,"Saint Kilda East, Victoria, Australia",within an hour,f
+164193,https://www.airbnb.com/users/show/164193,Daryl & Dee,"['email', 'phone', 'manual_online', 'reviews', 'manual_offline', 'work_email']",2010-07-12,"Berwick, Victoria, Australia",within an hour,t
+182833,https://www.airbnb.com/users/show/182833,Diana,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'offline_government_id', 'government_id', 'work_email']",2010-07-27,"Melbourne, Victoria, Australia",N/A,f
+189682,https://www.airbnb.com/users/show/189682,Belinda,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'offline_government_id', 'selfie', 'government_id', 'identity_manual', 'work_email']",2010-08-03,"Melbourne, Victoria, Australia",within a few hours,f
+189684,https://www.airbnb.com/users/show/189684,Allan,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'offline_government_id', 'selfie', 'government_id', 'identity_manual']",2010-08-03,"Melbourne, Victoria, Australia",within an hour,t
+190879,https://www.airbnb.com/users/show/190879,Michelle,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'government_id', 'work_email']",2009-10-31,"Melbourne, Victoria, Australia",within an hour,f
+193031,https://www.airbnb.com/users/show/193031,Vicki,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'government_id']",2010-08-06,"Frankston, Victoria, Australia",within an hour,t
+212071,https://www.airbnb.com/users/show/212071,Loren,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'offline_government_id', 'government_id']",2010-08-24,"Melbourne, Victoria, Australia",N/A,t
+246509,https://www.airbnb.com/users/show/246509,Fiona,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'offline_government_id', 'selfie', 'government_id', 'identity_manual']",2011-02-17,"Port Melbourne, Victoria, Australia",within a few hours,t
+277353,https://www.airbnb.com/users/show/277353,Loretta,"['email', 'phone', 'reviews']",2010-08-04,"South Melbourne, Victoria, Australia",within an hour,t
+287730,https://www.airbnb.com/users/show/287730,Rebecca,"['email', 'phone', 'reviews', 'jumio', 'government_id']",2011-09-20,"Albert Park, Victoria, Australia",within an hour,t
+326880,https://www.airbnb.com/users/show/326880,Kate,"['email', 'phone', 'reviews', 'jumio', 'government_id']",2010-11-03,"Melbourne, Victoria, Australia",within a few hours,f
+334095,https://www.airbnb.com/users/show/334095,Alec,"['email', 'phone', 'reviews', 'jumio', 'government_id', 'work_email']",2010-12-25,"Melbourne, Victoria, Australia",within a few hours,t
+336319,https://www.airbnb.com/users/show/336319,Andre,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'government_id', 'work_email']",2009-10-31,"Melbourne, Victoria, Australia",within an hour,f
+347754,https://www.airbnb.com/users/show/347754,Wendy,"['email', 'phone', 'reviews', 'jumio', 'government_id']",2011-01-05,"Melbourne, Victoria, Australia",N/A,f
+356006,https://www.airbnb.com/users/show/356006,Raewyn,"['email', 'phone', 'reviews', 'jumio', 'government_id']",2011-01-03,"Melbourne, Victoria, Australia",N/A,f
+376675,https://www.airbnb.com/users/show/376675,Ramona,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'offline_government_id', 'government_id']",2009-12-03,"Melbourne, Victoria, Australia",N/A,f
+392505,https://www.airbnb.com/users/show/392505,Mario,"['email', 'phone', 'reviews', 'jumio', 'government_id']",2011-01-14,"Clifton Hill, Victoria, Australia",within a few hours,f
+392594,https://www.airbnb.com/users/show/392594,Walter,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'government_id']",2010-08-06,"Frankston, Victoria, Australia",within an hour,t
+395864,https://www.airbnb.com/users/show/395864,Linda,"['email', 'phone', 'facebook', 'reviews']",2011-01-21,"Mordialloc, Victoria, Australia",within a few hours,t
+397569,https://www.airbnb.com/users/show/397569,Karen,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'government_id']",2011-02-04,"Fitzroy, Victoria, Australia",within an hour,t
+410806,https://www.airbnb.com/users/show/410806,Judy,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'government_id']",2011-02-15,"Melbourne, Victoria, Australia",within an hour,t
+419767,https://www.airbnb.com/users/show/419767,Julie,"['email', 'phone', 'reviews', 'manual_offline', 'jumio', 'government_id']",2011-02-15,"Melbourne, Victoria, Australia",within a few hours,f
+504534,https://www.airbnb.com/users/show/504534,Lanie,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'offline_government_id', 'government_id']",2011-08-10,"Parkville, Victoria, Australia",within a few hours,f
+538647,https://www.airbnb.com/users/show/538647,Chris,"['email', 'phone', 'reviews', 'jumio', 'government_id']",2011-09-15,"Melbourne, Victoria, Australia",N/A,f
+559227,https://www.airbnb.com/users/show/559227,Malcolm,"['phone', 'reviews', 'jumio', 'offline_government_id', 'government_id']",2011-02-18,"Melbourne, Victoria, Australia",within a day,f
+569413,https://www.airbnb.com/users/show/569413,Dina,"['email', 'phone', 'reviews', 'manual_offline', 'jumio', 'offline_government_id', 'government_id']",2011-02-26,"South Melbourne, Victoria, Australia",within an hour,t
+605990,https://www.airbnb.com/users/show/605990,Jenny,"['email', 'phone', 'facebook', 'jumio', 'offline_government_id', 'government_id']",2011-06-14,"Melbourne, Victoria, Australia",within a few hours,f
+606393,https://www.airbnb.com/users/show/606393,Barbara,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'government_id']",2011-03-03,"Prahran, Victoria, Australia",within an hour,t
+646383,https://www.airbnb.com/users/show/646383,Hannah,"['email', 'phone', 'reviews']",2009-10-31,"Melbourne, Victoria, Australia",within an hour,f
+668249,https://www.airbnb.com/users/show/668249,Shirley,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'offline_government_id', 'selfie', 'government_id', 'identity_manual']",2010-09-27,"Albert Park, Victoria, Australia",within an hour,t
+668611,https://www.airbnb.com/users/show/668611,Toni,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'government_id']",2011-02-04,"Fitzroy, Victoria, Australia",within an hour,t
+689924,https://www.airbnb.com/users/show/689924,Adrian,"['email', 'phone', 'reviews', 'jumio', 'offline_government_id', 'government_id', 'work_email']",2009-10-31,"Melbourne, Victoria, Australia",within an hour,f
+699180,https://www.airbnb.com/users/show/699180,Peter,"['email', 'phone', 'reviews', 'jumio', 'government_id']",2011-05-05,"South Melbourne, Victoria, Australia",within an hour,f
+700065,https://www.airbnb.com/users/show/700065,Marilyn,"['email', 'phone', 'manual_online', 'facebook', 'reviews', 'manual_offline', 'jumio', 'offline_government_id', 'government_id']",2011-07-11,"Melbourne, Victoria, Australia",N/A,f
+717024,https://www.airbnb.com/users/show/717024,Margaret,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'offline_government_id', 'government_id']",2011-05-09,"Melbourne, Victoria, Australia",within an hour,f
+721348,https://www.airbnb.com/users/show/721348,Living Like Locals,"['email', 'phone', 'reviews', 'sent_id']",2011-11-28,"Melbourne, Victoria, Australia",within a few hours,f
+770883,https://www.airbnb.com/users/show/770883,Karen,"['email', 'phone', 'reviews', 'jumio', 'offline_government_id', 'government_id', 'work_email']",2011-05-20,"Parkdale, Victoria, Australia",within a few hours,f
+772011,https://www.airbnb.com/users/show/772011,Alice,"['email', 'phone', 'reviews', 'manual_offline', 'jumio', 'offline_government_id', 'government_id']",2011-05-31,"Melbourne, Victoria, Australia",N/A,f
+794442,https://www.airbnb.com/users/show/794442,Angel,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'offline_government_id', 'government_id']",2011-10-28,"Melbourne, Victoria, Australia",within an hour,f
+796181,https://www.airbnb.com/users/show/796181,John,"['email', 'phone', 'reviews']",2011-06-05,"Melbourne, Victoria, Australia",N/A,f
+804527,https://www.airbnb.com/users/show/804527,Tania,"['email', 'phone', 'reviews']",2011-06-14,"Melbourne, Victoria, Australia",N/A,f
+913736,https://www.airbnb.com/users/show/913736,Danielle & Ruth,"['email', 'phone', 'google', 'reviews', 'jumio', 'government_id']",2011-06-18,"Melbourne, Victoria, Australia",within an hour,t
+950667,https://www.airbnb.com/users/show/950667,Rosemary,"['email', 'phone', 'facebook', 'reviews']",2011-08-30,"Melbourne, Victoria, Australia",N/A,f
+1029900,https://www.airbnb.com/users/show/1029900,Oscar,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'government_id', 'work_email']",2011-07-03,"Albert Park, Victoria, Australia",within a few hours,t
+1038237,https://www.airbnb.com/users/show/1038237,Ian,"['email', 'phone', 'reviews']",2011-07-03,"Melbourne, Victoria, Australia",within an hour,f
+1107678,https://www.airbnb.com/users/show/1107678,Helen,"['email', 'phone', 'offline_government_id', 'selfie', 'government_id']",2011-07-09,"Mt Waverley, Victoria, Australia",within a day,f
+1165452,https://www.airbnb.com/users/show/1165452,Julie,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'government_id']",2010-07-27,"Melbourne, Victoria, Australia",N/A,f
+1179603,https://www.airbnb.com/users/show/1179603,Anita,"['email', 'phone']",2011-05-19,"Melbourne, Victoria, Australia",N/A,f
+1184368,https://www.airbnb.com/users/show/1184368,Dan,"['email', 'phone', 'reviews', 'jumio', 'government_id']",2011-06-06,"Hawthorn East, Victoria, Australia",within a few hours,f
+1197236,https://www.airbnb.com/users/show/1197236,Clarelee,"['email', 'phone', 'reviews']",2011-08-03,"Melbourne, Victoria, Australia",within an hour,f
+1198300,https://www.airbnb.com/users/show/1198300,Daniela,"['email', 'phone', 'facebook', 'reviews']",2011-08-03,"Melbourne, Victoria, Australia",within an hour,f
+1214242,https://www.airbnb.com/users/show/1214242,Mal,"['email', 'phone', 'reviews', 'jumio']",2011-08-28,"Melbourne, Victoria, Australia",within a day,f
+1260586,https://www.airbnb.com/users/show/1260586,Neil,"['email', 'phone', 'facebook', 'reviews', 'offline_government_id', 'government_id']",2011-06-11,"Melbourne, Victoria, Australia",N/A,f
+1296115,https://www.airbnb.com/users/show/1296115,Fiona,"['email', 'phone', 'reviews']",2011-09-23,"Melbourne, Victoria, Australia",N/A,f
+1300846,https://www.airbnb.com/users/show/1300846,Ayelet,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'government_id']",2011-09-22,"Belgrave, Victoria, Australia",within an hour,t
+1344893,https://www.airbnb.com/users/show/1344893,Hoang And Michael,"['email', 'phone', 'reviews', 'jumio', 'offline_government_id', 'government_id']",2011-09-27,"Melbourne, Victoria, Australia",within a day,t
+1345462,https://www.airbnb.com/users/show/1345462,Gloria,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'government_id']",2011-09-04,"Melbourne, Victoria, Australia",N/A,f
+1349266,https://www.airbnb.com/users/show/1349266,Adam,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'offline_government_id', 'selfie', 'government_id', 'identity_manual']",2011-11-08,"New York, New York, United States",within a few hours,t
+1372143,https://www.airbnb.com/users/show/1372143,Chlo√©,"['email', 'phone', 'reviews']",2011-10-07,"Melbourne, Victoria, Australia",within an hour,f
+1384456,https://www.airbnb.com/users/show/1384456,Eliisa,"['phone', 'facebook', 'reviews', 'offline_government_id', 'selfie', 'government_id', 'identity_manual']",2011-10-28,"Melbourne, Victoria, Australia",within an hour,t
+1407948,https://www.airbnb.com/users/show/1407948,Richard,['phone'],2010-11-15,"Melbourne, Victoria, Australia",within a few hours,t
+1408673,https://www.airbnb.com/users/show/1408673,Little Journey,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'offline_government_id', 'government_id']",2011-04-27,"Albert Park, Victoria, Australia",within a few hours,f
+1448773,https://www.airbnb.com/users/show/1448773,Margaret Jiin,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'offline_government_id', 'government_id']",2011-10-16,"Perth, Western Australia, Australia",within an hour,t
+1475619,https://www.airbnb.com/users/show/1475619,Lulu,"['email', 'phone', 'reviews', 'offline_government_id', 'government_id', 'work_email']",2011-10-17,"Melbourne, Victoria, Australia",within a few hours,f
+1480426,https://www.airbnb.com/users/show/1480426,Kate,"['email', 'phone', 'reviews', 'jumio', 'offline_government_id', 'government_id']",2009-10-31,"Melbourne, Victoria, Australia",within an hour,f
+1505279,https://www.airbnb.com/users/show/1505279,Julie,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'government_id']",2011-05-09,"Melbourne, Victoria, Australia",within an hour,f
+1533260,https://www.airbnb.com/users/show/1533260,Ryan,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'offline_government_id', 'government_id']",2011-04-12,"Melbourne, Victoria, Australia",within a few hours,f
+1582716,https://www.airbnb.com/users/show/1582716,Sharyn,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'government_id', 'work_email']",2011-11-05,"Melbourne, Victoria, Australia",within an hour,f
+1597828,https://www.airbnb.com/users/show/1597828,Bridget,"['email', 'phone', 'reviews', 'jumio', 'offline_government_id', 'selfie', 'government_id']",2011-09-19,"Melbourne, Victoria, Australia",N/A,f
+1608157,https://www.airbnb.com/users/show/1608157,Fay,"['email', 'phone', 'reviews', 'jumio', 'government_id']",2009-10-31,"Melbourne, Victoria, Australia",within an hour,f
+1612516,https://www.airbnb.com/users/show/1612516,Haydn,"['email', 'phone', 'reviews', 'jumio', 'government_id', 'work_email']",2011-11-15,"Melbourne, Victoria, Australia",N/A,f
+1628602,https://www.airbnb.com/users/show/1628602,Jacqueline,"['phone', 'reviews', 'jumio', 'government_id']",2011-11-15,"Belgrave, Victoria, Australia",within an hour,t
+1704562,https://www.airbnb.com/users/show/1704562,Kate,"['email', 'phone', 'facebook']",2011-02-18,"Melbourne, Victoria, Australia",within a day,f
+1705701,https://www.airbnb.com/users/show/1705701,Veruschka,"['email', 'phone', 'reviews', 'jumio', 'offline_government_id', 'selfie', 'government_id', 'identity_manual']",2011-12-05,"Fitzroy, Victoria, Australia",within an hour,t
+1810523,https://www.airbnb.com/users/show/1810523,Viktoria,"['email', 'phone', 'reviews', 'jumio', 'government_id']",2011-09-19,"Melbourne, Victoria, Australia",N/A,f
+1835097,https://www.airbnb.com/users/show/1835097,Rovielle,"['email', 'phone', 'facebook', 'reviews', 'jumio', 'government_id']",2011-11-15,"Melbourne, Victoria, Australia",N/A,f
+1835785,https://www.airbnb.com/users/show/1835785,Alan,"['email', 'phone', 'reviews', 'jumio', 'government_id']",2011-11-15,"Melbourne, Victoria, Australia",within a few hours,f
+1847357,https://www.airbnb.com/users/show/1847357,Susan,"['email', 'phone', 'facebook', 'reviews', 'offline_government_id', 'selfie', 'government_id']",2011-11-28,"Melbourne, Victoria, Australia",within an hour,t
