@@ -1,0 +1,64 @@
+Creating keyspace,table and import data to table from CSV file:
+> create keyspace FIT5137_Assign_C3 with replication={'class':'SimpleStrategy','replication_factor':1};
+> use FIT5137_Assign_C3;
+> CREATE TABLE review1 ( listing_id int,
+                    id int,
+                    rdate date,
+                    reviewer_id int,
+                    reviewer_name text,
+                    review_scores_rating int,
+                    comments text,
+                    PRIMARY KEY ((review_scores_rating),listing_id,rdate,reviewer_id)
+                    ) ;
+					
+					
+					
+copy FIT5137_Assign_C3.review1 (listing_id,id,rdate,reviewer_id,reviewer_name,review_scores_rating,comments) from 'C:\Users\User\Desktop\FIT5137\A\review4.txt' WITH DELIMITER='|' AND HEADER=TRUE;
+
+
+CREATE TABLE review2 ( listing_id int,
+                    id int,
+                    rdate date,
+                    reviewer_id int,
+                    reviewer_name text,
+                    review_scores_rating int,
+                    comments text,
+                    PRIMARY KEY ((rdate),listing_id,reviewer_id,review_scores_rating)
+                    ) ;
+					
+copy FIT5137_Assign_C3.review2 (listing_id,id,rdate,reviewer_id,reviewer_name,review_scores_rating,comments) from 'C:\Users\User\Desktop\FIT5137\A\review4.txt' WITH DELIMITER='|' AND HEADER=TRUE;
+
+
+CREATE TABLE review3 ( listing_id int,
+                    id int,
+                    rdate date,
+                    reviewer_id int,
+                    reviewer_name text,
+                    review_scores_rating int,
+                    comments text,
+                    PRIMARY KEY ((listing_id,reviewer_name),review_scores_rating)
+                    ) ;
+					
+					
+					
+copy FIT5137_Assign_C3.review3 (listing_id,id,rdate,reviewer_id,reviewer_name,review_scores_rating,comments) from 'C:\Users\User\Desktop\FIT5137\A\review4.txt' WITH DELIMITER='|' AND HEADER=TRUE;
+
+ 16. select * from review1 where review_scores_rating >=70 and review_scores_rating <= 90 allow filtering;
+ 17. select listing_id,reviewer_name,comments from review1 where review_scores_rating < 50 allow filtering;
+ 18. select count(*) from review2 where rdate > '2015-01-01' and rdate < '2015-12-01' allow filtering;
+ 19. select MAX(review_scores_rating) from review2 where rdate = '2017-03-26' allow filtering;
+ 20. SELECT listing_id,reviewer_name,MAX(review_scores_rating) from review3 GROUP BY listing_id,reviewer_name;
+ 
+ 
+ Addintionalqueries
+ 4. Select reviewer id and review score for listing id 279854 which were done before 1 June, 2012.
+ 5. Display reviewer id whose review scores are greater than 60 and the date when the scores were given.
+ 
+ answer for additional queries
+ 
+ 4. select reviewer_id,review_scores_rating from review2 where rdate < '2012-06-01' and listing_id = 279854 allow filtering; 
+ 5. select reviewer_id,rdate from review1 where review_scores_rating > 60 allow filtering;
+ 
+ 
+ 
+

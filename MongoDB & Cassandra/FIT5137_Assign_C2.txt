@@ -1,0 +1,37 @@
+1. db.Host.updateOne(
+{"host_name": "Adam"},
+{$set:{"host_verifications":["email","phone","google","reviews","jumio","government id","work email","facebook"]},
+$currentDate: { lastModified: true }
+}
+)
+
+2. db.Host.insertMany([
+{"host_id":"MONHOS11","host_name":"Alison","host_verifications":["email","phone","facebook","reviews"],"host_since":Date("9/1/2019"),"host_location":{"suburb":"Caulfield","state":"Victoria","Country":"Australia"},"host_response_time":"within an hour","host_is_superhost":false},
+{"host_id":"MONHOS12","host_name":"Mike","host_verifications":["email","phone"],"host_since":Date("9/1/2019"),"host_location":{"suburb":"Clayton","state":"Victoria","Country":"Australia"},"host_response_time":"within a day","host_is_superhost":true},
+{"host_id":"MONHOS13","host_name":"Robyn","host_verifications":["facebook","reviews"],"host_since":Date("9/1/2019"),"host_location":{"suburb":"Berwick","state":"Victoria","Country":"Australia"},"host_response_time":"within an hour","host_is_superhost":false},
+{"host_id":"MONHOS14","host_name":"Daniel","host_verifications":["email","namual offline","work email"],"host_since":Date("9/1/2019"),"host_location":{"suburb":"Frankston","state":"Victoria","Country":"Australia"},"host_response_time":"within a day","host_is_superhost":true},
+{"host_id":"MONHOS15","host_name":"Ron","host_verifications":["facebook"],"host_since":Date("9/1/2019"),"host_location":{"suburb":"Caulfield","state":"Victoria","Country":"Australia"},"host_response_time":"within a day","host_is_superhost":false},
+])
+
+3. db.Host.updateMany(
+{"host_response_time": {$eq:"within an hour"}},
+{$set:{"host_is_superhost":true},
+$currentDate:{lastModified: true}
+}
+)
+
+4. db.Listing.deleteMany(
+{"availability_365":0})
+
+5. db.Listing.update(
+{"neighbourhood":"Monash"},
+{$set:{"neighbourhood":"Monash City"},
+$currentDate:{lastModified: true}
+}
+)
+
+6. UPDATE review
+SET satisfied_reason = {'space','price'}
+WHERE review_id = 'REV11';
+
+7. DELETE comments FROM review WHERE reviewer_id=500015;

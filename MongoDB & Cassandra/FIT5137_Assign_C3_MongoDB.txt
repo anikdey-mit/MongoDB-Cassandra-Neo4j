@@ -1,0 +1,257 @@
+Importing JSON files:
+1. mongoimport --db FIT5137_Assign_C3 --collection Host --file C:\Users\User\Desktop\FIT5137\host.json
+2. mongoimport --db FIT5137_Assign_C3 --collection Listing --file C:\Users\User\Desktop\FIT5137\listing.json
+
+Creating listing_host collection and inserting data into it:
+db.createCollection("listing_host")
+
+db.listing_host.insertMany(
+ db.Listing.aggregate([
+{
+$lookup:{
+from:"Host",
+localField:"host_id",
+foreignField:"host_id",
+as:"hosts"
+}
+}
+]).pretty().toArray()
+)
+
+Queries For Embedding Model:
+
+1. db.listing_host.find({"last_review":{$in:[ISODate("2018-12-01T00:00:00Z"),ISODate("2018-12-31T00:00:00Z")]}}).count()
+
+2. db.listing_host.aggregate([
+{$match:{neighbourhood:"Port Phillip"}},
+{$group:{_id:"$neighbourhood",average_price:{$avg:"$price"}}}
+])
+
+3. db.listing_host.aggregate([
+{$group:{_id:"$neighbourhood","avg_review":{$avg:"$reviews_per_month"}}},
+{$sort:{"avg_review":-1}},
+{$limit:10},
+{$project:{_id:1,"avg_review":1}}
+])
+
+4. db.listing_host.aggregate([
+{$match:{street:{$regex:/^Melbourne*/}}},
+{$sort:{"number_of_reviews":1}},
+{$project:{"street":1,"number_of_reviews":1,_id:0}}
+]).pretty()
+
+5. db.listing_host.aggregate([
+{$group:{_id:"$room_type",room_type:{$sum:1}}},
+{$sort:{"room_type":-1}},
+{$limit:1},
+{$project:{_id:1}}
+])
+
+6. db.listing_host.aggregate([
+{$project:{_id:0,"street":1,"price":1}},
+{$sort:{"price":-1}},
+{$limit:5}
+])
+
+7. db.listing_host.aggregate([
+{$match:{"hosts.host_name":"Eleni"}}
+]).pretty()
+
+8. db.listing_host.aggregate([
+{$match:{"hosts.host_response_time":"within a few hours"}}
+]).pretty()
+
+9. db.listing_host.aggregate([
+{$unwind:"$hosts"},
+{$match:{"hosts.host_name":"Colin"}},
+{$match:{$or:[{amenities:{$regex:/Internet*/i}},{amenities:{$regex:/Gym*/i}}]}}]).pretty()
+
+10. db.listing_host.aggregate([
+{$match:{"street":{$regex:/Clayton/},"name":{$regex:/Beautiful/i}}},
+{$project:{_id:0,"price":1,"room_type":1}}
+])
+
+11. db.listing_host.aggregate([
+{$project:{_id:1,address:{$concat:["$name",", ","$street",", ",{$toString:"$zipcode"}," ,","$neighbourhood"]}}},
+{$project:{_id:0}},
+{$sort:{address:1}}
+]).pretty()
+
+12. db.listing_host.aggregate([
+{$group:{_id:"$name",maximum_period:{$max:"$availability_365"}}},
+{$sort:{"maximum_period":-1}},
+{$limit:13},
+{$project:{"start_date":new Date(),_id:1,maximum_period:1}}
+]).pretty()
+
+13. db.listing_host.aggregate([
+{$group:{_id:"$neighbourhood","avg_price":{$avg:"$price"}}},
+{$match:{"avg_price":{$gt:50}}},
+{$sort:{_id:-1}}
+])
+
+14 db.listing_host.aggregate([{$project:{hosts:1}},
+{$unwind:"$hosts"},
+{$unwind:"$hosts.host_verifications"},
+{$group:{_id:{"hid":"$hosts.host_id","hname":"$hosts.host_name"},number_of_verification_methods:{$sum:1}}},
+{$project:{_id:1,"number_of_verification_methods":1}},
+{$sort:{"number_of_verification_methods":-1}}
+]).pretty()
+
+15. db.listing_host.aggregate([
+{$match:{id:10803}},
+{$sort:{last_review:-1}},
+{$limit:1}
+]).pretty()
+
+
+Queries For Referencing Model:
+
+1. db.Listing.find({"last_review":{$in:[ISODate("2018-12-01T00:00:00Z"),ISODate("2018-12-31T00:00:00Z")]}}).count()
+
+2. db.Listing.aggregate([
+{$match:{"neighbourhood":"Port Phillip"	}},
+{$group:{"_id":"$neighbourhood",avgPrice:{$avg:"$price"}}}
+]).pretty();
+
+3. db.Listing.aggregate([
+{$group:{_id:"$neighbourhood","avg_review":{$avg:"$reviews_per_month"}}},
+{$sort:{"avg_review":-1}},
+{$limit:10},
+{$project:{_id:1,"avg_review":1}}
+])
+
+4. db.Listing.aggregate([
+{$match:{street:{$regex:/^Melbourne*/}}},
+{$sort:{"number_of_reviews":1}},
+{$project:{"street":1,"number_of_reviews":1,_id:0}}
+]).pretty()
+
+5. db.Listing.aggregate([
+{$group:{_id:"$room_type",myCount:{$sum:1}}},
+{$sort:{myCount:-1}},
+{$limit:1},
+{$project:{_id:1}}
+])
+
+6. db.Listing.aggregate([
+{$sort:{"price":-1}},
+{$limit:5},
+{$project:{street:1,_id:0,price:1}}
+])
+
+7. db.Listing.aggregate([
+{
+	$lookup:{
+			from:"Host",
+			localField:"host_id",
+			foreignField:"host_id",
+			as:"hosts"
+			}
+},
+{
+	$unwind:"$hosts"	
+},
+{$match:{"hosts.host_name":"Eleni"}}
+]).pretty()
+
+8. db.Listing.aggregate([
+{
+	$lookup:{
+			from:"Host",
+			localField:"host_id",
+			foreignField:"host_id",
+			as:"hosts"
+			}
+},
+{
+	$unwind:"$hosts"	
+},
+{$match:{"hosts.host_response_time":"within an hour"}}
+]).pretty()
+
+9.  db.Listing.aggregate([
+ {$lookup:{
+	
+	from:"Host",
+	localField:"host_id",
+	foreignField:"host_id",
+	as:"hosts"
+	}},
+{$match:{"hosts.host_name":"Colin"}},
+{$match:{$or:[{amenities:{$regex:/Internet*/i}},{amenities:{$regex:/Gym*/i}}]}}
+]).pretty()
+
+10. db.Listing.aggregate([
+{$match:{"street":{$regex:/Clayton/},"name":{$regex:/Beautiful/i}}},
+{$project:{_id:0,"price":1,"room_type":1}}
+])
+
+11. db.Listing.aggregate([
+{$project:{_id:1,address:{$concat:["$name",",","$street",", ",{$toString:"$zipcode"}," ,","$neighbourhood"]}}},
+{$project:{_id:0}},
+{$sort:{address:1}}
+]).pretty()
+
+12. db.Listing.aggregate([
+{$group:{_id:"$name",maximum_period:{$max:"$availability_365"}}},
+{$sort:{"maximum_period":-1}},
+{$limit:13},
+{$project:{"start_date":new Date(),_id:1,maximum_period:1}}
+]).pretty()
+
+
+13. db.Listing.aggregate([
+{$group:{_id:"$neighbourhood","avg_price":{$avg:"$price"}}},
+{$match:{"avg_price":{$gt:50}}},
+{$sort:{_id:-1}}
+])
+
+14. db.Host.aggregate([
+{$unwind:"$host_verifications"},
+{$group:{_id:{"hid":"$host_id","hname":"$host_name"},number_of_verification_methods:{$sum:1}}},
+{$project:{_id:1,"number_of_verification_methods":1}},
+{$sort:{"number_of_verification_methods":-1}}
+]).pretty()
+
+15. db.Listing.aggregate([
+{$match:{id:10803}},
+{$sort:{last_review:-1}},
+{$limit:1}
+]).pretty()
+
+Indexes:
+1. db.listing_host.createIndex({street:1, price:1})
+2. db.listing_host.createIndex({neighbourhood:1})
+
+We selected the neighbourhood because we can filter our search based on neighbourhood.
+And for compound index we selected street and price so that we can find listings with correspondence to street address and price.
+
+
+Addintionalqueries
+
+1)what listings provide extra people 20 to 30 and have email verification method.
+2)what suburbs have more than one listing and sort them by list count.
+3)select listings that have host who responds within an hour
+	
+
+answer for additional queries
+
+1. db.listing_host.aggregate([
+{$unwind:"$hosts"},
+{$match:{"extra_people" :{$gt:20,$lt :30},"hosts.host_verifications":"email"}}
+]).pretty()
+
+
+2. db.listing_host.aggregate([
+{$group:{_id:"$street",list_count:{$sum:1}}},
+{$match:{"list_count":{$gt:1}}},
+{$sort:{list_count:-1}}
+]).pretty()
+
+ 
+3. db.listing_host.aggregate([
+{$unwind:"$hosts"},
+{$match:{"hosts.host_response_time":"within an hour"}},
+{$project:{name:1,_id:0}}
+]).pretty()
